@@ -3,3 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn btn-primary{
+background: #da9bdc;
+}
+
+.btn-facebook {
+    background-color: #405d9d;
+    color: #fff;
+}
+.btn-facebook:hover {
+    color: #fff;
+}
+.btn-google {
+    background-color: #af0000;
+    color: #fff;
+}
+.btn-google:hover {
+    color: #fff;
+}
+
+/* ===================Footer=================== */
+footer {
+    background: #7332f5;
+    padding: 40px;
+}
+footer a {
+    color: #f8f9fa !important;
+}

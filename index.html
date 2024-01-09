@@ -1,18 +1,385 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link href="./src/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1 class="bg-red-500">
-   Xin chao minh la Hau
-    </h1>
-    <div id="app"></div>
-   
-    <script type="module" src="./src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark " style="background: #7332f5;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"><img src="img/Hstore.png" alt="" style="width: 15%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" style="background: #7332f5;">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" style="background: #7332f5">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" style="background: #7332f5">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" style="background: #7332f5">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)" style="background: #7332f5">About</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button" style="background: #dc9bd5;">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="banner">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.png" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.png" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" alt="New York" class="d-block" style="width:100%">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+    <!-- Carousel -->
+    <!-- Sản phẩm mởi nhất -->
+    <section class="last-product">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card">
+              <div class="card-header  text-white text-uppercase text-center" style="background: #7332f5;">
+                <i class="fa fa-star"></i> Sản phẩm mới nhất
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -1% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=2" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/asus.jpg"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=2">
+                          Laptop Asus ZenBook UX371EA </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">41,490,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            41,000,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=2" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -4% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=3" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain"
+                        src="../../uploaded/products/hp-gaming-victus.jpg" alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=3">
+                          Laptop HP Gaming VICTUS 16 </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">24,290,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            23,290,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=3" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -2% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=5" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/hp-envy.jpg"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=5">
+                          Laptop HP Envy 13 ba1030TU </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">30,490,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            29,990,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=5" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -4% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=6" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain"
+                        src="../../uploaded/products/laptop-asus.png" alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=6">
+                          Laptop Gaming Asus ROG Strix </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">47,990,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            45,990,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=6" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -12% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=7" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/nittro.jpg"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=7">
+                          Acer Nitro Gaming AN515 57 </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">25,999,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            23,000,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=7" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -12% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=14" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/s1.jpg"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=14">
+                          OPPO Reno6 Z 5G </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">10,190,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            8,990,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=14" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -10% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=22" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/i12.webp"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=22">
+                          iPhone 12 mini 128GB I Chính hãng VN/A </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">20,990,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            18,990,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=22" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-3">
+                  <div class="card text-center product-card pb-2">
+                    <div class="product-badge text-danger bg-warning">
+                      -45% </div>
+                    <a class="product-thumb" href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=23" data-abc="true">
+                      <img class="card-img-top product-img object-fit-contain" src="../../uploaded/products/d.webp"
+                        alt="Ảnh sản phẩm">
+                    </a>
+                    <div class="card-body p-0 pt-2 px-2">
+                      <h3 class="product-title mh-60">
+                        <a href="/duan1/site/hang-hoa/chi-tiet.php?ma_hh=23">
+                          Đồng hồ thông minh Xiaomi Mi Watch Lite </a>
+                      </h3>
+                      <div class="product-price">
+                        <div class="col d-flex justify-content-center align-items-center">
+                          <del class="d-block fz-14">1,990,000đ </del>
+                          <p class="text-danger font-weight-bold fz-20 d-block ml-3 mb-0">
+                            1,090,000đ</p>
+                        </div>
+                      </div>
+                      <div class="col m-2">
+                        <a href="/duan1/site/cart/add-cart.php?id=23" class="btn btn-outline-primary btn-sm">Add to
+                          cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <br>
+  <footer class="text-light">
+    <div class="container">
+      <div class="row" style="background: #7332f5">
+        <div class="col-md-3 col-lg-4 col-xl-3">
+          <h5>Về chúng tôi</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <p class="mb-0">
+            Hstore - Trang thương mại điện tử lớn nhất Việt Nam
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+          <h5>Thông tin</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> Trịnh Văn Bô - Nam Từ Liêm</li>
+            <li><i class="fas fa-phone-volume"></i> 0966913533</li>
+            <li><i class="fas fa-envelope"></i>haundph34804@fpt.edu.vn</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+          <h5>Chính sách</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li>Chính sách bảo hành</li>
+            <li>Chính sách đổi hàng</li>
+            <li>Chính sách bảo mật</li>
+            <li>Chính sách vận chuyển</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3">
+          <h5>Liên hệ</h5>
+          <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+          <ul class="list-unstyled">
+            <li><i class="fa fa-home mr-2"></i> Công ty</li>
+            <li><i class="fa fa-envelope mr-2"></i> Hstore99@gmail.com</li>
+            <li><i class="fa fa-phone mr-2"></i> + 0966913533</li>
+            <li><i class="fa fa-print mr-2"></i> + 0966913533</li>
+          </ul>
+        </div>
+        <div class="col-12 copyright mt-3">
+          <p class="float-left">
+            <a class="btn btn-info" href="<?= $ROOT_URL ?>">Về đầu trang</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
 </html>
